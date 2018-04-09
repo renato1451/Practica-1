@@ -2,11 +2,11 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 using namespace std;
-int suma1(int n,int&m)
+int suma1(int n,int&m)//recibe un parametro por paso por valor y otro por paso por referencia
 {
 	return n+m;
 }
-void incremento(int &n)
+void incremento(int &n)//recibe un parametro por paso por referencia
 {
 	n=n+1;
 }
