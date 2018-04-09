@@ -1,15 +1,15 @@
-#include <iostream>
+ #include <iostream>
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int longitud(char *s)
 {
-    return (*s) ? 1 + longitud(s + 1) : 0;
+    return (*s) ? 1 + longitud(s + 1) : 0; //retorna el tamaño de una cadena usando solo punteros
 }
 
 int tamano(char s[])
 {
 	int cont=0;
-	for(int i=0;s[i]!='\0';i++){	
+	for(int i=0;s[i]!='\0';i++){	  // retorna el tamaño de una cadena usando arreglos
 		cont++;
 	}
 	return cont;
