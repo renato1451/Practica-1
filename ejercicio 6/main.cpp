@@ -1,9 +1,9 @@
-#include <iostream>
+ #include <iostream>
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int length(char *v)
 {
-    return (*v) ? 1 + length(v + 1) : 0;
+    return (*v) ? 1 + length(v + 1) : 0; //retorna el tamaño deuna cadena 
 }
 void mostrar(char v[])
 {
@@ -15,19 +15,19 @@ void mostrar(char v[])
 void copiar(char v[],char m[])
 {
 	int d=length(v);
-	for(int i=0;i<(length(v)+length(m));i++)
+	for(int i=0;i<(length(v)+length(m));i++)  // recorremos en la suma de tamaños de las cadenas dadas
 	{
-		*(v+i)=*(m+i);
+		*(v+i)=*(m+i);     //copea cada elemento de m en v
 	}
-	return mostrar(v);
+	return mostrar(v);  //muestra v
 }
 char* copy(char *v,const char *m)
 {
-	const char *p;
+	const char *p;       
 	char *q;
-	for(p=m;*p;p++,q++) *q=*p;
+	for(p=m;*p;p++,q++) *q=*p;//asignamos al *q todos los valores de p es decir m
 	*q='\0';
-	return v;
+	return v;        //mostramos el array otra vez
 }
 int main(int argc, char** argv) {
 	char *a=new char[40];
