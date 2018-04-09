@@ -28,8 +28,7 @@ int main(int argc, char** argv) {
 		cin>>numeros[i];
 	}
 	cout<<endl;
-	//insertionSort(numeros,size);
-	mergeSort(numeros,size);
+	insertionSort(numeros,size);
 	for(int i=0;i<size;i++)
 	{
 		cout<<numeros[i]<<" ";
